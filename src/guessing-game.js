@@ -11,8 +11,8 @@ class GuessingGame {
     }
 
     guess() {
-     
-      return Match.ceil((this.high - this.low)/2);;
+      this.mid = Match.ceil((this.high - this.low)/2);
+      return this.mid;
     }
 
     lower() {
