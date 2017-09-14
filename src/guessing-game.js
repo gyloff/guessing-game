@@ -1,8 +1,6 @@
 class GuessingGame {
     constructor() {
-      this.low;
-      this.high;
-      this.mid;
+      this.low, this.high, this.mid;
     }
 
     setRange(min, max) {
@@ -11,7 +9,7 @@ class GuessingGame {
     }
 
     guess() {
-      this.mid = Match.ceil((this.high - this.low)/2);
+      this.mid = Math.ceil((this.high - this.low)/2);
       return this.mid;
     }
 
@@ -20,7 +18,7 @@ class GuessingGame {
     }
 
     greater() {
-      this.low = this.mid;
+      this.low = -this.mid;
     }
 }
 
